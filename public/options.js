@@ -7,4 +7,9 @@ document.getElementById("llamada").addEventListener("click",function llamada(){
             document.getElementById("contenedor-traduccion").textContent = data
         }
     })
-}) 
+});
+
+var random = function(){
+    let numeral = Math.floor((Math.random()*contenido.length));
+    return numeral; 
+}
