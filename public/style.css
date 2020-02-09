@@ -1,3 +1,7 @@
+:root{
+    --none:none;
+    --block:block;
+}
 body{
     box-sizing: border-box;}
 .contenedor{
@@ -9,5 +13,52 @@ body{
     height: 100px;
     width: 100%;
     box-sizing: border-box;
+    padding: 0px 10px;
 }
 .imagen>img{height: 100%;width: 100%;}
+#contenedor-traduccion{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.language{
+    height: 30px;
+    width: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contenido_esp,#contenido_eng{
+    height: auto;
+    width: 90%;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.fa-eye{margin: 5px;cursor: pointer;;}
+#llamada{
+    height: 30px;
+    width: 100%;
+    background: linear-gradient(132deg, rgba(48,48,48,1) 0%, rgba(76,38,38,1) 6%, rgba(101,29,29,1) 55%, rgba(182,0,0,1) 100%);
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.oracion_ingles{
+    display:var(--none)
+}
+.mostrar_eye{
+    display: var(--block);
+}

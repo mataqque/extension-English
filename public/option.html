@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/public/font.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,9 +14,19 @@
             <img src="/img/128x128.png" alt="">
         </div>
         <div id="contenedor-traduccion">
-            
+                <div class="language">Español</div>
+                <div id="contenido_esp">oracion</div>
         </div>
-        <button id="llamada">Mostrar</button>
+        <div id="contenedor-traduccion">
+                <div class="language">Ingles</div>
+                <div id="contenido_eng">
+                    <div class="p-2 flex-grow-1 text-center oracion_ingles">Oracion en Ingles</div>
+                    <i class="far fa-eye h3 mostrar_eye"></i>
+                </div>
+        </div>
+        <div id="contenedor-traduccion">
+            <button id="llamada">Mostrar</button>
+        </div>
     </div>
     <script src="/public/jquery.min.js"></script>
     <script src="options.js"></script>
