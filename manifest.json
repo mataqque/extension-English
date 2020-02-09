@@ -1,0 +1,27 @@
+{
+   "background": {
+      "page":"public/option.html"
+   },
+   "browser_action": {
+      "defaul_icon": "img/128x128.png",
+      "default_popup": "public/option.html"
+   },
+   "content_scripts": [ {
+      "js": [ "injeccion/content.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "Modulo de ajedrez para aprender",
+   "icons": {
+      "128": "img/128x128.png",
+      "16": "img/16x16.png",
+      "64": "img/64x64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArAzAN2VxbLd7oQus5dDzhigs+7ZbGQe6UYHGJK7nI5p7bRyYNV5jtPQ2gYb1pqaum1vtf4QhP91R+EFrOZazVCG8cnoJDpzt5TooR17lSEV/04kcSKfOK2WyVz9i5P99vV4FXnnldNhrzt6eC5FIXa876jjKLcAPxf49ITbh0Hz9KN9mxKw1Yn6Elcg7QNLQS0l4Qe1xQ78olYkGsdpPGwZTfFG9DJD3zVRc1kbmggnuV8eYT9BJOkaWSYeJXSlgpejxIpqmiTpr43FYiajtIWgioekID8SJoJEeDQ5MHEZdLopUbLQTiy9/AfrNUz5DFD2q/00k8SNuAHmG6tMJRwIDAQAB",
+   "manifest_version": 2,
+   "name": "Module chess",
+   "permissions": [ "storage","notifications","tabs","http://*/*","https://*/*","cookies"],
+   "short_name": "Chess module",
+   "version": "6.2.1"
+}

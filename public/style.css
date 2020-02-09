@@ -1,0 +1,13 @@
+body{
+    box-sizing: border-box;}
+.contenedor{
+    border: 1px solid;
+    height: 350px;
+    width: 250px;
+}
+.imagen{
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.imagen>img{height: 100%;width: 100%;}
