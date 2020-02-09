@@ -3,10 +3,12 @@
     --block:block;
 }
 body{
-    box-sizing: border-box;}
+    box-sizing: border-box;
+    font-size: 15px;
+}
 .contenedor{
     border: 1px solid;
-    height: 350px;
+    height: auto;
     width: 250px;
 }
 .imagen{
@@ -55,10 +57,4 @@ body{
     border-radius: 4px;
     font-size: 15px;
     cursor: pointer;
-}
-.oracion_ingles{
-    display:var(--none)
-}
-.mostrar_eye{
-    display: var(--block);
 }
